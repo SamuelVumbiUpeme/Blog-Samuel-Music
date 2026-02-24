@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicVibe Pro | Download & Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <h1 class="logo">Blog Samuel<span>Music</span></h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar música...">
+            </div>
+        </nav>
+    </header>
+
+    <div class="ad-space-horizontal container">
+        <p>Anúncio - Google AdSense</p>
+    </div>
+
+    <main class="container main-layout">
+        <section class="playlist-section">
+            <div class="section-header">
+                <h3>Músicas Grátis</h3>
+                <span class="badge">Novidades</span>
+            </div>
+            <div id="playlist" class="playlist">
+                </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="ad-space-square">
+                <p>Publicidade</p>
+            </div>
+            
+            <div class="news-widget">
+                <h3>Sobre o Blog</h3>
+                <p>Baixe as melhores músicas sem pagar nada. Cada download ajuda o blog a crescer!</p>
+            </div>
+
+            <div class="ad-space-square">
+                <p>Anúncio Lateral</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="player-bar">
+        <div class="container player-inner">
+            <div class="track-details">
+                <img src="" alt="Capa" id="track-art">
+                <div>
+                    <h4 id="track-name">Selecione uma faixa</h4>
+                    <p id="track-artist">Artista</p>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <div class="buttons">
+                    <button id="prevBtn"><i class="fas fa-step-backward"></i></button>
+                    <button id="playBtn" class="main-play"><i class="fas fa-play"></i></button>
+                    <button id="nextBtn"><i class="fas fa-step-forward"></i></button>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bg" id="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="volume-control">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.8">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
